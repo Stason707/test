@@ -8,10 +8,101 @@
     <link rel="stylesheet" href="stiles.css">
 </head>
 <body>
-    <p class="text">На улице леото. Привет. Изучаем GIT. Вебинар про ошибки </p>
-    <p class="text">На улице леото. Привет. Изучаем GIT. Вебинар про ошибки </p>
-    <p class="text">На улице леото. Привет. Изучаем GIT. Вебинар про ошибки </p>
-    <p class="text">На улице леото. Привет. Изучаем GIT. Вебинар про ошибки </p>
-    <p class="text">На улице леото. Привет. Изучаем GIT. Вебинар про ошибки </p>
+    <header class="header">
+        <div class="container">
+            <h1 class="Вебинар">Вебинар</h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2 class="forms">Заявка на технический осмотр</h2>
+            <form>
+                <fieldset>
+                            <legend>Пожалуйста, опишите свой автомобиль</legend>
+                            Марка автомобиля: <input type="text" name="Trademark" placeholder="Введите марку авто">
+                            <br>
+                            <br>
+                            Модель: <input type="text" name="model" placeholder="Введите модель авто">
+                            
+                            <p>Коробка передач:</p>
+                            АКПП <input type="radio" name="gear" value="auto" checked>
+                            МКПП <input type="radio" name="gear" value="hand">
+                            <br>
+                            <p>Необходимо проверить:</p>
+                            <input type="checkbox" name="type1" value="brake">Тормозная жидкость<br>
+                            <input type="checkbox" name="type2" value="parall">Развал-схождение<br>
+                            <input type="checkbox" name="type3" value="antifreez">Система охлаждения<br>
+                            <input type="checkbox" name="type4" value="suspension">Подвеска<br>
+                            <input type="checkbox" name="type5" value="Oil">Масло в двигателе<br>
+
+                            <p>Какое масло заливать:</p>
+                            <select name="oillist">
+                                <option label=""></option>
+                                <option label="Motul" selected>Motul</option>
+                                <option label="Shell">Shell</option>
+                                <option label="Castrol">Castrol</option>
+                                <option label="Lukoil">Lukoil</option>
+                                <option label="Oleina" disabled></option>
+                            </select>
+                            <br>
+                            <p>Цвет подкраски суппортов:</p>
+                            <input type="color" list="colorlist" value="#ffff00">
+                            <datalist id="colorlist">
+                                <option value="#cc0000" label="Красный"></option>
+                                <option value="#00bbbb" label="Зеленый"></option>
+                                <option value="#0000ff" label="Синий"></option>
+                                <option value="#ffffff" label="Белый"></option>
+                                <option value="#cccccc" label="Серый"></option>
+                            </datalist>
+                            <br>
+                            <br>
+                            Дата визита:
+                            <br>
+                            <br>
+                            <input type="date" name="visit" value="2022-05-03" min="2022-05-03" max="2022-06-03" >
+                            <br>
+                            <br>
+                            Ваша почта
+                            <br>
+                            <input type="email" name="email">
+                            <br>
+                            <br>
+                            Ваш телефон
+                            <br>
+                            <input type="tel" name="phone" required="required">  
+                            <br>
+                            <br>                    
+                            <input type="submit" value="Заказать">
+                            <br>
+                            <br>
+                            <input type="reset">
+                            <br>
+                            <br>
+                </fieldset>
+                <p>Прогресс техосмотра</p>
+                <progress value="25" max="100"></progress>
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Обратная связь</legend>
+                    <br>
+                    <p>Оцените качество услуг</p>
+                    <br>
+                    <input type="range" min="0" max="10" step="1" value="7">
+                    <br>
+                    <p>Что бы хотелось улучшить?</p>
+                    <br>
+                    <textarea name="comment" id="" cols="50" rows="7" placeholder="Ваши пожелания"></textarea>
+                    <br>
+                    <p>Порекоммендуете наш сервис друзьям?</p>
+                    <label for="yes">ДА <input type="radio" id="yes" name="chois" value="yes" checked></label><br> <br>
+                    <label for="no">НЕТ <input type="radio" id="no" name="chois" value="no"></label>
+                    <br>
+                </fieldset>
+                <iframe width="500" height="270" src="https://www.youtube.com/embed/NP80AhMvTTI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </form>
+        </div>
+    </main>
+    <p class="text">На улице лето. Привет. Изучаем GIT. Вебинар про ошибки </p>
 </body>
 </html>

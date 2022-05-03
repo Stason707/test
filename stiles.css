@@ -13,6 +13,6 @@ html, body{
     box-sizing: border-box;
 }
 
-.footer {background-color: #fbfbfb;}
+.footer {background-color: hsl(240, 40%, 2%);}
 
 .footer-text {text-align: center;}
